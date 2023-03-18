@@ -1,0 +1,10 @@
+.container{
+    padding: 2vh;
+}
+
+.header{
+    font-family: monospace;
+    border: solid;
+    border-radius: 12px;
+    padding: 4px;
+}

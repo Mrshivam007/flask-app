@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask App</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Current price of NEFTY Bank is: {{ price }}</h1>
+        <h2>Current date is: {{ date }}</h2>
+      </div>
+      <!-- <p>Today is: {{ day }}</p> -->
+      <!-- <p>Value for today is: {{ value }}</p> -->
+      <div class="content">
+        <h2>Hedging</h2>
+      </div>
+      <div class="values">
+        <h3>Buying CE => {{ buyCE }} at {{ buyCE_price }}</h3>
+        <h3>Buying PE => {{ buyPE }} at {{ buyPE_price }}</h3>
+        <h3>Selling CE => {{ sellCE }} at {{ sellCE_price }}</h3>
+        <h3>Selling PE => {{ sellPE }} at {{ sellPE_price }}</h3>
+      </div>
+      <div class="content">
+        <h2>Selling</h2>
+        <div class="values">
+          <h3>Selling CE => {{ buyCE }} at {{ sellingCE_price }}</h3>
+        <h3>Selling PE => {{ buyPE }} at {{ sellingPE_price }}</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
